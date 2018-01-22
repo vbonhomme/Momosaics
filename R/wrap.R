@@ -45,7 +45,9 @@ mosaic_wrap <- function(df, nr, nc){
     # binds with original data.frame
     bind_cols(df) %>%
     # adds mosaic_df class
-    `class<-`(c("mosaic_df", class(.)))
+    `class<-`(c("mosaic_df", class(.))) %>%
+    # transplate
+    transplate()
 }
 
 #' @rdname mosaic_wrap
@@ -81,5 +83,9 @@ mosaic_wrap_factor <- function(df, f, nr, nc){
     na.omit() %>%
     # binds with original data.frame
     bind_cols(df) %>%
-    mutate(n=1:n())
+    mutate(n=1:n()) %>%
+    # adds mosaic_df class
+    `class<-`(c("mosaic_df", class(.))) %>%
+    # transplate
+    transplate()
 }
