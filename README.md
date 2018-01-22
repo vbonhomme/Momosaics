@@ -1,6 +1,7 @@
 
-[![Travis-CI Build Status](https://travis-ci.org/vbonhomme/Momosaics.svg?branch=master)](https://travis-ci.org/vbonhomme/Momosaics) <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis-CI Build Status](https://travis-ci.org/vbonhomme/Momosaics.svg?branch=master)](https://travis-ci.org/vbonhomme/Momosaics) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/Momosaics)](http://cran.r-project.org/package=Momosaics) [![Coverage Status](https://img.shields.io/codecov/c/github/vbonhomme/Momosaics/master.svg)](https://codecov.io/github/vbonhomme/Momosaics?branch=master) ![CRAN downloads last month](http://cranlogs.r-pkg.org/badges/Momosaics) ![CRAN downloads grand total](http://cranlogs.r-pkg.org/badges/grand-total/Momosaics)
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 Momosaics
 =========
 
