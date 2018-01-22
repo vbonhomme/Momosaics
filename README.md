@@ -7,5 +7,5 @@ Momosaics uses primitive layers to draw many shapes or subplots as mosaics of pl
 ## Example
 
 ``` r
-## Todo.
+## Todo
 ```
