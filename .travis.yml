@@ -3,3 +3,10 @@
 language: R
 sudo: false
 cache: packages
+
+notifications:
+  email:
+    recipients:
+      - bonhomme.vincent@gmail.com
+    on_success: change
+    on_failure: change
