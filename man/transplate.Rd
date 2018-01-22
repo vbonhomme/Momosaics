@@ -14,5 +14,5 @@ transplate(df, size = 0.95)
 \description{
 Passed with a \code{mosaic_df}, template shapes to the desired size,
 then translate shapes to the required locus using \code{xc} and \code{yc}
-columns from the \code{data.frame}.
+columns from the \code{data.frame}. Used internally by \code{wrap_*} functions.
 }

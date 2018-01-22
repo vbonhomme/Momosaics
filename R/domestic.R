@@ -26,7 +26,7 @@
 #'
 #' Passed with a `mosaic_df`, template shapes to the desired size,
 #' then translate shapes to the required locus using `xc` and `yc`
-#' columns from the `data.frame`.
+#' columns from the `data.frame`. Used internally by `wrap_*` functions.
 #' @param df a `mosaic_df` data.frame
 #' @param size the templating size. See [Momocs::coo_template()]
 #' @export
