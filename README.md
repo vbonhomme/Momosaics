@@ -19,18 +19,10 @@ Example
 -------
 
 ``` r
+# First load Momosaics
 library(Momosaics)
-#> This is Momosaics 0.1.0
+# To benefit its datasets
 library(Momocs)
-#> This is Momocs 1.2.2
-#> 
-#> Attaching package: 'Momocs'
-#> The following object is masked from 'package:stats':
-#> 
-#>     filter
-#> The following object is masked from 'package:base':
-#> 
-#>     table
 mosaic_wrap(bot$coo) %>% 
   mosaic_empty_plot() %>% 
   add_outlines()

@@ -26,8 +26,10 @@ devtools::install_github("vbonhomme/Momosaics")
 ```
 
 ## Example
-```{r outlines}
+```{r outlines, message=FALSE}
+# First load Momosaics
 library(Momosaics)
+# To benefit its datasets
 library(Momocs)
 mosaic_wrap(bot$coo) %>% 
   mosaic_empty_plot() %>% 
