@@ -29,10 +29,11 @@
 #' columns from the `data.frame`.
 #' @param df a `mosaic_df` data.frame
 #' @param size the templating size. See [Momocs::coo_template()]
+#' @export
 transplate <- function(df, size=0.95){
   for (i in 1:nrow(df)){
     df$shp[[i]] %<>%
-      Momocs::coo_center %>%
+      Momocs::coo_center() %>%
       Momocs::coo_template(size) %>%
       Momocs::coo_trans(x=df$xc[i], y=df$yc[i])
   }
