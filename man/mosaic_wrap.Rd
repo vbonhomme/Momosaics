@@ -27,7 +27,3 @@ then decuces real coordinates (\code{xc} and \code{yc} columns).
 \details{
 If no \code{nr} (and/or \code{nc}) is passed, tries to return a squared mosaic plot.
 }
-\examples{
-1:10 \%>\% mosaic_wrap()
-1:10 \%>\% mosaic_wrap(nr=2)
-}

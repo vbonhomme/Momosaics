@@ -14,9 +14,6 @@
 #' @param nr `integer` the number of rows for the mosaic plot
 #' @param nc `interger` the number of columns for the mosaic plot
 #'
-#' @examples
-#' 1:10 %>% mosaic_wrap()
-#' 1:10 %>% mosaic_wrap(nr=2)
 #' @export
 mosaic_wrap <- function(df, nr, nc){
   if (!is.data.frame(df)){
