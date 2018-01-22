@@ -44,4 +44,4 @@ mosaic_wrap_factor(bot$coo, bot$fac$type) %>%
   add_headers()
 ```
 
-
+More to come.

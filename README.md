@@ -39,3 +39,5 @@ mosaic_wrap_factor(bot$coo, bot$fac$type) %>%
 ```
 
 ![](README-factor-1.png)
+
+More to come.
