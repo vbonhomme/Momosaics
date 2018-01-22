@@ -1,0 +1,16 @@
+Package: Momosaics
+Type: Package
+Title: Plots and shapes as mosaics
+Version: 0.1.0
+Date: 2018-01-22
+Authors@R: c(person("Vincent", "Bonhomme", , "bonhomme.vincent@gmail.com", c("aut", "cre")))
+Description: Use primitive layers to draw many shapes or subplot as a mosaic of plots. 
+License: GPL-2 | GPL-3
+URL: https://github.com/vbonhomme/Momosaics/
+BugReports: https://github.com/vbonhomme/Momosaics/
+Depends: R(>= 3.2)
+Imports: dplyr, magrittr, Momocs
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
