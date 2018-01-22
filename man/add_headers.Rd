@@ -17,6 +17,9 @@ to obtain something adequate}
 
 \item{...}{additional arguments to feed \code{\link[=text]{text()}}}
 }
+\value{
+the \code{mosaic_df}, invisibly
+}
 \description{
 Add headers to groups on a mosaic plot
 }

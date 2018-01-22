@@ -10,14 +10,15 @@
 #' @param col `color` (recycled) to feed [polygon()]
 #' @param lty `numeric` (recycled) to feed [polygon()]
 #' @param ... additional arguments to feed [polygon()]
+#' @return the `mosaic_df`, invisibly
 #' @export
 add_polygons <-
   function(df,
            column="shp",
            density=rep(NA, nrow(df)),
            angle=45,
-           border=rep(NA, nrow(df)),
-           col=rep(par("fg"), nrow(df)),
+           border=rep(par("fg"), nrow(df)),
+           col=rep(par("bg"), nrow(df)),
            lty=rep(par("lty"), nrow(df)),
            ...){
     n <- nrow(df)
@@ -40,7 +41,7 @@ add_polygons <-
                 col=col[i],
                 lty=lty[i])
     }
-    df
+    invisible(df)
   }
 
 #' @rdname add_polygons
@@ -56,6 +57,7 @@ add_outlines <- add_polygons
 #' @param lwd `numeric` (recycled) to feed [lines()]
 #' @param lty `numeric` (recycled) to feed [lines()]
 #' @param ... additional arguments to feed [lines()]
+#' @return the `mosaic_df`, invisibly
 #' @export
 add_lines <-
   function(df, column="shp",
@@ -77,7 +79,7 @@ add_lines <-
               lwd=lwd[i],
               lty=lty[i])
     }
-    df
+    invisible(df)
   }
 
 #' @rdname add_lines
@@ -95,6 +97,7 @@ add_curves <- add_lines
 #' @param cex `numeric` to feed [text()], if missing tries
 #' to obtain something adequate
 #' @param ... additional arguments to feed [text()]
+#' @return the `mosaic_df`, invisibly
 #' @export
 add_text <-
   function(df, column="shp",
@@ -125,7 +128,7 @@ add_text <-
            cex=cex,
            ...)
     }
-    df
+    invisible(df)
   }
 
 #' @rdname add_text
@@ -140,6 +143,7 @@ add_labels <- add_text
 #' @param cex `numeric` to feed [text()], if missing tries
 #' to obtain something adequate
 #' @param ... additional arguments to feed [text()]
+#' @return the `mosaic_df`, invisibly
 #' @export
 add_headers <-
   function(df, column="f",
@@ -158,5 +162,5 @@ add_headers <-
     }
 
     text(-0.25, df_h$yc, labels, cex=cex, adj=1, ...)
-    df
+    invisible(df)
   }

@@ -25,6 +25,9 @@ column in \code{df} to feed \code{\link[=lines]{lines()}}.}
 
 \item{...}{additional arguments to feed \code{\link[=lines]{lines()}}}
 }
+\value{
+the \code{mosaic_df}, invisibly
+}
 \description{
 Add curves/lines to a mosaic plot
 }

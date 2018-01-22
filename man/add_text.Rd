@@ -27,6 +27,9 @@ to obtain something adequate}
 
 \item{...}{additional arguments to feed \code{\link[=text]{text()}}}
 }
+\value{
+the \code{mosaic_df}, invisibly
+}
 \description{
 Add text to shapes of a mosaic plot
 }

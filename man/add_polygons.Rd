@@ -6,11 +6,11 @@
 \title{Add outlines/polygons to a mosaic plot}
 \usage{
 add_polygons(df, column = "shp", density = rep(NA, nrow(df)), angle = 45,
-  border = rep(NA, nrow(df)), col = rep(par("fg"), nrow(df)),
+  border = rep(par("fg"), nrow(df)), col = rep(par("bg"), nrow(df)),
   lty = rep(par("lty"), nrow(df)), ...)
 
 add_outlines(df, column = "shp", density = rep(NA, nrow(df)), angle = 45,
-  border = rep(NA, nrow(df)), col = rep(par("fg"), nrow(df)),
+  border = rep(par("fg"), nrow(df)), col = rep(par("bg"), nrow(df)),
   lty = rep(par("lty"), nrow(df)), ...)
 }
 \arguments{
@@ -30,6 +30,9 @@ column in \code{df} to feed \code{\link[=polygon]{polygon()}}.}
 \item{lty}{\code{numeric} (recycled) to feed \code{\link[=polygon]{polygon()}}}
 
 \item{...}{additional arguments to feed \code{\link[=polygon]{polygon()}}}
+}
+\value{
+the \code{mosaic_df}, invisibly
 }
 \description{
 Add outlines/polygons to a mosaic plot
